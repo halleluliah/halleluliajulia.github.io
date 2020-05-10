@@ -1,0 +1,148 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/Без имени-3.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Елка</title>
+        <style type="text/css">
+            
+   button.build-name {
+    padding: 10px 30px;
+    margin-left: 30px;
+    position: relative;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 20px; 
+    background: black;
+    border-color: gray;
+    align-items: center;
+    }
+            
+  </style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1eyI82ZDoSPDBl8T32pVEEP96y_q0_cwVc4PrJGl69HdW1XiAwJQ-gbluWX27C4ArSnH-68P4v2JyQDRGXDyqw" charset="UTF-8"></script></head>
+    <body>
+        
+        
+        <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                
+                <div class="user">
+                    
+                    <div class="user__avatar">
+                        <img src="images/me.png" alt="">
+                    </div>
+                    <div class="user__FIO">
+                        <div class="user__name">
+                            Титовец Юлия <br> Алексеевна
+                        </div>
+                        <div class="user__prof">
+                            Системный администратор, <br> наверное 
+                        </div>
+                    </div>
+                
+                </div>
+                <nav class="nav">
+<!--                    <a class="nav__link" href="video.html">Видео</a>-->
+                    <a class="nav__link" href="works.html">Работы</a>
+                    <a class="nav__link" href="index.html">Обо мне</a>
+<!--                    <a class="nav__link" href="contacts.html">Blender</a>-->
+                    <a class="nav__link" href="https://www.dvfu.ru/" target="_blank">Сайт ДВФУ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+        
+  <section class="intro">
+        <div class="container">
+            <div class="intro__inner1">
+                <div class="intro__cont">
+                    <h2 class="intro__subtitle">   </h2>
+                    <h1 class="intro__title">ЛАБОРАТОРНАЯ РАБОТА №2</h1>
+                    <div class="intro__text">Необходимо было создать интерактивную страницу, где пользователь может нарядить елку игрушками.<br>
+                    Критерии оценки:<br>
+                    - меню из 4х типов игрушек со знаком "+" сверху;<br>
+                    - ри нажатии на игрушку добавляется новая игрушка в случайном месте;<br>
+                    - добавленные объекты перетаскиваются;<br>
+                    - игрушки на елке перетаскиваются вместе с ней;<br>
+                    - при нажатии кнопки "построить имя" строится мое имя :)<br><br>
+                        Можно попробовать прямо сейчас
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+        
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <button class="add_button ball_1" style="background: url(images/ball_1.png);">+</button>
+                    <button class="add_button ball_2" style="background: url(images/ball_2.png);">+</button>
+                    <button class="add_button ball_3" style="background: url(images/ball_3.png);">+</button>
+                    <button class="add_button ball_4" style="background: url(images/ball_4.png);">+</button>
+
+                    <button class="build-name">построить имя</button>
+<!--
+                    <a class="nav__link" href="index.html">Назад на главную</a>
+                    <a class="nav__link" href="document.pdf">Курсовая pdf</a>
+                    <a class="nav__link" href="document.tex">Файл tex</a>
+-->
+                </div>
+            </div>
+            <div class="row">
+                <div id="canvas" style="width: 1024px; height: 512px; border: none; position: relative;">
+                    <div id="tree" style="position: absolute;" draggable="false">
+                        <img src="images/tree.png" width="300" height="500" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/elka.js"></script>
+        
+        
+  <footer class="footer">
+    
+        <div class="container"> 
+        
+            <div class="footer_inner">
+                <div class="footer__credits">
+                    <div class="footer__copyrights"> &copy; тут что-то о моих правах, которых нет </div>
+                    <div class="footer__social">
+                        <a class="footer__link" href="https://vk.com/hallelujajula" target="_blank">
+                            <img src="images/vk.svg" width="30" alt=" ">
+                        </a>
+                        <a class="footer__link" href="https://wa.me/79146788073" target="_blank">
+                            <img src="images/wha.svg" width="24" alt=" ">
+                        </a>
+                        <a class="footer__link" href="https://t.me/halleluliah" target="_blank">
+                            <img src="images/telegram.svg" width="24" alt=" ">
+                        </a>
+                        <a class="footer__link" href="https://www.instagram.com/halellujajula/" target="_blank">
+                            <img src="images/insta.svg" width="24" alt=" ">
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer__nav"> 
+                   <a class="footer__nav-link" href="works.html">Работы</a>
+                   <a class="footer__nav-link" href="index.html">Обо мне</a>
+                   <a class="footer__nav-link" href="https://www.dvfu.ru/" target="_blank">Сайт ДВФУ</a>
+                </nav>
+            </div>
+            
+        </div>
+    
+    </footer>
+    
+    </body>
+</html>
